@@ -1,0 +1,39 @@
+\documentclass[../mainfile.tex]{article}
+\usepackage{ngerman}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\begin{document}
+	
+	\section{Grenzwertsätze}
+	\subsection*{Definition:}
+		Seien $a_n$ und $b_n$ Folgen, sowie $\lambda \in \mathbb{R}$
+		
+		\begin{enumerate} [i)]
+			\item Eine Folge besitzt höchstens einen Grenzwert. \\
+			\item Jede Folge, die konvergiert, ist notwendigerweise beschränkt.\\
+			\item Sei $\displaystyle \lim_{n\to\infty} a_n = a$ und $\displaystyle\lim_{n\to\infty} b_n = b$
+			\begin{enumerate}
+				\item $\displaystyle\lim_{n\to\infty} (a_n+b_n) = a+b$
+				\item $\displaystyle\lim_{n\to\infty} (\lambda a_n) = \lambda a$
+				\item $\displaystyle\lim_{n\to\infty} (a_n \cdot b_n) = a \cdot b$
+				\item Falls $b\neq 0$ \\
+				$\displaystyle\lim_{n\to\infty} (\frac{a_n}{b_n}) = \frac{a}{b}$
+			\end{enumerate}
+			\item Ist $a_n$ konvergent gegen a und $a_n \geqslant c \forall n \in \mathbb{N}$, dann ist auch $a \geqslant c$. \\
+			Analog für $a_n \leqslant c$  
+		\end{enumerate}
+	
+	\section{Sandwich-Lemma:} 
+		Sein $a_n$ und $b_n$ zwei reelle konvergente Folgen mit dem selben Grenzwert a \\(also $\displaystyle \lim_{n\to\infty} a_n = a$ und $\displaystyle\lim_{n\to\infty} b_n = a$) \\
+		so gilt: $a_n \leqslant c_n \leqslant b_n$, dass $\displaystyle\lim_{n\to\infty} c_n = a$ 
+	\subsection*{Bsp:}
+		$a_n = \sqrt[n]{4^n+7^n}$ \\  
+		sicher kleiner: $\sqrt[n]{7^n}$ \\
+		sicher größer: $\sqrt[n]{7^n+7^n}$ \\\\
+		$\underbrace{\sqrt[n]{7^n}}_{\text{7}} \geqslant \sqrt[n]{4^n+7^n} \geqslant \underbrace{\sqrt[n]{7^n+7^n}}_{7 \cdot \sqrt[n]{2} = 7}$ \\
+		$\Rightarrow \displaystyle\lim_{n\to\infty} \sqrt[n]{4^n+7^n} = \underline{\underline{7}}$
+		
+\end{document}

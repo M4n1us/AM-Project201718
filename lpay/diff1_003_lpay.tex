@@ -1,0 +1,52 @@
+\documentclass[../mainfile.tex]{article}
+\usepackage{ngerman}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\begin{document}
+				
+	\section{Tabelle wichtiger 1. Ableitungen}
+		{\centering
+		{\large
+		\renewcommand{\arraystretch}{1.3}
+		\begin{tabular}{c|c}
+			f(x) =		&	f'(x) =                     \\ \hline
+			c           &	0                           \\ \hline
+			$x^n$ 	    &	$n \cdot x^{n-1}$ 			\\ \hline
+			sin x       &	cos x                       \\ \hline
+			cos x       &	-sin x                      \\ \hline
+			$e^x$		&	$e^x$         				\\ \hline
+			$a^x$ 		&	$log(a) \cdot a^x$  		\\ \hline
+			log a       &	$\frac{1}{x}$               \\ \hline
+			$log_a x$   &	$\frac{1}{log(a) \cdot x}$                 
+		\end{tabular}\par
+		}		
+		}
+		\renewcommand{\arraystretch}{1.3}
+		
+	\section{Ableitungsregeln: (!!!)}
+	\begin{enumerate} [i)]
+		{\large\item Faktorregel:} \\\\
+		f(x) = $c \cdot g(x)$	\qquad	$(c \in \mathbb{R})$ \\
+		f'(x) = $c \cdot g'(x)$ \\
+		Konstanter Faktor darf vorgezogen werden \\
+		\underline{Bsp}: \\ 
+		f(x) = $2x^2$ \\
+		f'(x) = $(2x^2)'$ = $2 \cdot 2x$ = 4x \\\\
+		
+		{\large\item Summenregel:} \\\\
+		f(x) = g(x) + h(x) $\Rightarrow$ f'(x)= g'(x) + h'(x) \\
+		\underline{Bsp}: \\ 
+		f(x) = $x^3+x^2-x-1 \leftarrow$ fällt weg ($-1 \cdot x^0 \rightarrow 0 \cdot (-1) \cdot x^{-1}$) \\
+		f'(x) = $3x^2+2x-1$	\\\\
+		
+		{\large\item Produktregel:} \\\\ 
+		f(x) = g(x) $\cdot$ h(x) $\Rightarrow f'(x)= g'(x) \cdot h(x) + g(x) \cdot h'(x)$ \\
+		\underline{Bsp}: \\ 
+		f(x) = $x \cdot sin(x)$ \\
+		f'(x) = $1 \cdot sin(x) + x \cos(x)$
+		
+	\end{enumerate}
+\end{document}
