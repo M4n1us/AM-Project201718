@@ -10,6 +10,7 @@
 %SU1_002
 \usepackage{enumitem} %Für alphabetische Aufzählungen (eigentlich für nummerierte)
 \usepackage{tikz} %zum Graphen zeichnen/plottn
+\usepackage{placeins} %float barriers
 
 %SU1_003
 
@@ -27,7 +28,8 @@
 %----------------
 
 %SU2_001
-%no new
+\usepackage{mathtools}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}% Star version changes length, used for absolute values
 
 %SU2_002
 
@@ -82,21 +84,21 @@
 \begin{document}
 
 %SU1_001
-\section{SU1 001 bwiedermann}
+\section*{SU1 001 bwiedermann}
 \subfile{./bwiedermann/SU1_001_bwiedermann.tex}
 
 %SU1_002
-\section{SU1 002 mwelsch}
+\section*{SU1 002 mwelsch}
 \subfile{./mwelsch/SU1_002_mwelsch.tex}
 
 %SU1_003
 
 %SU1_004
-\section{SU1 004 swahl}
+\section*{SU1 004 swahl}
 \subfile{./swahl/SU1_004_swahl.tex}
 
 %SU1_005
-\section{SU1 005 lpay}
+\section*{SU1 005 lpay}
 \subfile{./lpay/SU1_005_lpay.tex}
 
 %SU1_006
@@ -106,7 +108,7 @@
 %----------------
 
 %SU2_001
-\section{SU2 001 mwustinger}
+\section*{SU2 001 mwustinger}
 \subfile{./mwustinger/SU2_001_mwustinger.tex}
 
 %SU2_002
@@ -114,7 +116,7 @@
 %SU2_003
 
 %SU2_004
-\section{SU2 004 kurbaniec}
+\section*{SU2 004 kurbaniec}
 \subfile{./kurbaniec/SU2_004_kurbaniec.tex}
 
 %----------------
@@ -126,11 +128,11 @@
 %SU3_003
 
 %SU3_004
-\section{SU3 004 bwiedermann}
+\section*{SU3 004 bwiedermann}
 \subfile{./bwiedermann/SU3_004_bwiedermann.tex}
 
 %SU3_005
-\section{SU3 005 mwelsch}
+\section*{SU3 005 mwelsch}
 \subfile{./mwelsch/SU3_005_mwelsch.tex}
 
 %----------------
@@ -138,11 +140,11 @@
 %diff1_001
 
 %diff1_002
-\section{diff1 002 swahl}
+\section*{diff1 002 swahl}
 \subfile{./swahl/diff1_002_swahl.tex}
 
 %diff1_003
-\section{diff1 003 lpay}
+\section*{diff1 003 lpay}
 \subfile{./lpay/diff1_003_lpay.tex}
 
 %diff1_004
@@ -150,7 +152,7 @@
 %diff1_005
 
 %diff1_006
-\section{diff 006 mwustinger}
+\section*{diff 006 mwustinger}
 \subfile{./mwustinger/diff_006_mwustinger.tex}
 %wrong naming scheme
 
@@ -159,7 +161,7 @@
 %diff1_008
 
 %diff1_009
-\section{diff1 009 kurbaniec}
+\section*{diff1 009 kurbaniec}
 \subfile{./kurbaniec/diff1_009_kurbaniec.tex}
 
 %diff1_010
