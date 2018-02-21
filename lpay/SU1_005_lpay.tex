@@ -1,9 +1,4 @@
-\documentclass[../mainfile.tex]{article}
-\usepackage{ngerman}
-\usepackage[utf8x]{inputenc}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{enumerate}
+\documentclass[../mainfile.tex]{subfiles}
 
 \begin{document}
 	
@@ -11,11 +6,11 @@
 	\subsection*{Definition:}
 		Seien $a_n$ und $b_n$ Folgen, sowie $\lambda \in \mathbb{R}$
 		
-		\begin{enumerate} [i)]
-			\item Eine Folge besitzt höchstens einen Grenzwert. \\
-			\item Jede Folge, die konvergiert, ist notwendigerweise beschränkt.\\
-			\item Sei $\displaystyle \lim_{n\to\infty} a_n = a$ und $\displaystyle\lim_{n\to\infty} b_n = b$
-			\begin{enumerate}
+		\begin{enumerate}
+			\item[i)] Eine Folge besitzt höchstens einen Grenzwert. \\
+			\item[ii)] Jede Folge, die konvergiert, ist notwendigerweise beschränkt.\\
+			\item[iii)] Sei $\displaystyle \lim_{n\to\infty} a_n = a$ und $\displaystyle\lim_{n\to\infty} b_n = b$
+			\begin{enumerate}[label=(\alph*)]
 				\item $\displaystyle\lim_{n\to\infty} (a_n+b_n) = a+b$
 				\item $\displaystyle\lim_{n\to\infty} (\lambda a_n) = \lambda a$
 				\item $\displaystyle\lim_{n\to\infty} (a_n \cdot b_n) = a \cdot b$
